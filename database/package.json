@@ -9,7 +9,7 @@
     "node": "^18"
   },
   "scripts": {
-    "build": "npx --package=typescript tsc",
+    "build": "node init && npx --package=typescript tsc",
     "lint": "npx eslint \"src/**/*.ts\" --fix",
     "lint:ci": "npx eslint \"src/**/*.ts\" --max-warnings 0",
     "reset": "node dist/reset.js",
