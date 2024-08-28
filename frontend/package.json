@@ -3,9 +3,9 @@
   "version": "1.0.0",
   "private": true,
   "scripts": {
-    "build": "npx --package=vite vite build",
+    "build": "node init && npx --package=vite vite build",
     "lint": "npx --package eslint eslint . --ext .vue,.js,.jsx,.cjs,.mjs,.ts,.tsx,.cts,.mts --fix --ignore-path .gitignore",
-    "start": "npx --package=vite vite preview --strictPort --port 7200",
+    "start": "node init && npx --package=vite vite preview --strictPort --port 7200",
     "start:dev": "npx --package=vite vite --mode development --strictPort --port 7200",
     "type-check": "npx vue-tsc --noEmit -p tsconfig.vitest.json --composite false",
     "format": "prettier --write src/",

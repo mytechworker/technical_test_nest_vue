@@ -9,11 +9,11 @@
     "node": "^16"
   },
   "scripts": {
-    "build": "npx @nestjs/cli build",
+    "build": "node init && npx @nestjs/cli build",
     "lint": "npx eslint \"src/**/*.ts\" --fix",
     "lint:ci": "npx eslint \"src/**/*.ts\" --max-warnings 0",
     "start:compodoc": "npx @compodoc/compodoc -p tsconfig.json --serve",
-    "start": "NODE_ENV=dev npx @nestjs/cli start",
+    "start": "node init && NODE_ENV=dev npx @nestjs/cli start",
     "start:dev": "npx @nestjs/cli start --debug --watch",
     "test": "npx jest --config ./jest.json --watch",
     "test:e2e": "npx jest --config ./jest.json --verbose",
